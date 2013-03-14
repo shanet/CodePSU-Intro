@@ -165,36 +165,21 @@ a:focus {
     font-size: 64px;
     position: absolute;
     top: -0.5em;
-    left: 1.5em;
-    
-    -webkit-transform: translateZ(20px);
-    -moz-transform:    translateZ(20px);
-    -ms-transform:     translateZ(20px);
-    -o-transform:      translateZ(20px);
-    transform:         translateZ(20px);
-}
-
-#title .title {
-    font-size: 190px;
-    
-    -webkit-transform: translateZ(50px);
-    -moz-transform:    translateZ(50px);
-    -ms-transform:     translateZ(50px);
-    -o-transform:      translateZ(50px);
-    transform:         translateZ(50px);
+    left: 4.75em;
 }
 
 #title .subtitle {
     font-size: 45px;
+    position: relative;
+    left: 6.75em;
 }
 
 #title span {
     display: inline-block;
-    -webkit-transition: 0.5s;
-    -moz-transition:    0.5s;
-    -ms-transition:     0.5s;
-    -o-transition:      0.5s;
-    transition:         0.5s;
+}
+
+#title #codepsu_text {
+    margin-bottom: 100px;
 }
 
 #title.present .positioning {
@@ -203,21 +188,28 @@ a:focus {
     -ms-transform:     translateY(-110px);
     -o-transform:      translateY(-110px);
     transform:         translateY(-110px);
+
+    -webkit-transition: 0.5s;
+    -moz-transition:    0.5s;
+    -ms-transition:     0.5s;
+    -o-transition:      0.5s;
+    transition:         0.5s;
 }
 
 #title.present .rotating {
-    -webkit-transform: rotate(90deg);
-    -moz-transform:    rotate(90deg);
-    -ms-transform:     rotate(90deg);
-    -o-transform:      rotate(90deg);
-    transform:         rotate(90deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform:    rotate(360deg);
+    -ms-transform:     rotate(360deg);
+    -o-transform:      rotate(360deg);
+    transform:         rotate(360deg);
 
-    -webkit-transition-delay: 0.25s;
-    -moz-transition-delay:    0.25s;
-    -ms-transition-delay:     0.25s;
-    -o-transition-delay:      0.25s;
-    transition-delay:         0.25s;
+    -webkit-transition: 5s;
+    -moz-transition:    5s;
+    -ms-transition:     5s;
+    -o-transition:      5s;
+    transition:         5s;
 }
+
 
 
 #acm {
@@ -228,10 +220,26 @@ a:focus {
     line-height: 1;
 }
 
-#acm b {
-    display: block;
-    font-size: 100px;
-    line-height: 100px;
+#acm img {
+    -webkit-transition: 0.5s;
+    -moz-transition:    0.5s;
+    -ms-transition:     0.5s;
+    -o-transition:      0.5s;
+    transition:         0.5s;
+}
+
+#acm.present .scaling {
+    -webkit-transform: scale(1.15);
+    -moz-transform:    scale(1.15);
+    -ms-transform:     scale(1.15);
+    -o-transform:      scale(1.15);
+    transform:         scale(1.15);
+
+    -webkit-transition-delay: 0.25s;
+    -moz-transition-delay:    0.25s;
+    -ms-transition-delay:     0.25s;
+    -o-transition-delay:      0.25s;
+    transition-delay:         0.25s;
 }
 
 
@@ -240,8 +248,13 @@ a:focus {
     text-align: center;
 }
 
-#hayride span {
-    display: inline-block;
+#sponsors table {
+    position: relative;
+    right: 300px;
+}
+
+
+#sponsors img {
     -webkit-transition: 0.5s;
     -moz-transition:    0.5s;
     -ms-transition:     0.5s;
@@ -249,13 +262,9 @@ a:focus {
     transition:         0.5s;
 }
 
-
-#hayride.present .rotating {
-    -webkit-transform: rotate(10deg);
-    -moz-transform:    rotate(10deg);
-    -ms-transform:     rotate(10deg);
-    -o-transform:      rotate(10deg);
-    transform:         rotate(10deg);
+#sponsors .google {
+    position: relative;
+    right: 1000px;
 
     -webkit-transition-delay: 0.25s;
     -moz-transition-delay:    0.25s;
@@ -263,6 +272,96 @@ a:focus {
     -o-transition-delay:      0.25s;
     transition-delay:         0.25s;
 }
+
+
+#sponsors.present .google {
+    -webkit-transform: translateX(1000px);
+    -moz-transform:    translateX(1000px);
+    -ms-transform:     translateX(1000px);
+    -o-transform:      translateX(1000px);
+    transform:         translateX(1000px);
+}
+
+#sponsors .microsoft {
+    position: relative;
+    bottom: 500px;
+
+    -webkit-transition-delay: 0.5s;
+    -moz-transition-delay:    0.5s;
+    -ms-transition-delay:     0.5s;
+    -o-transition-delay:      0.5s;
+    transition-delay:         0.5s;
+}
+
+
+#sponsors.present .microsoft {
+    -webkit-transform: translateY(500px);
+    -moz-transform:    translateY(500px);
+    -ms-transform:     translateY(500px);
+    -o-transform:      translateY(500px);
+    transform:         translateY(500px);
+}
+
+#sponsors .accenture {
+    position: relative;
+    top: 500px;
+
+    -webkit-transition-delay: 0.75s;
+    -moz-transition-delay:    0.75s;
+    -ms-transition-delay:     0.75s;
+    -o-transition-delay:      0.75s;
+    transition-delay:         0.75s;
+}
+
+
+#sponsors.present .accenture {
+    -webkit-transform: translateY(-500px);
+    -moz-transform:    translateY(-500px);
+    -ms-transform:     translateY(-500px);
+    -o-transform:      translateY(-500px);
+    transform:         translateY(-500px);
+}
+
+#sponsors .cap_one {
+    position: relative;
+    left: 1000px;
+
+    -webkit-transition-delay: 1s;
+    -moz-transition-delay:    1s;
+    -ms-transition-delay:     1s;
+    -o-transition-delay:      1s;
+    transition-delay:         1s;
+}
+
+
+#sponsors.present .cap_one {
+    -webkit-transform: translateX(-1000px);
+    -moz-transform:    translateX(-1000px);
+    -ms-transform:     translateX(-1000px);
+    -o-transform:      translateX(-1000px);
+    transform:         translateX(-1000px);
+}
+
+#sponsors .booz {
+    position: relative;
+    top: 500px;
+
+    -webkit-transition-delay: 1.25s;
+    -moz-transition-delay:    1.25s;
+    -ms-transition-delay:     1.25s;
+    -o-transition-delay:      1.25s;
+    transition-delay:         1.25s;
+}
+
+
+#sponsors.present .booz {
+    -webkit-transform: translateY(-500px);
+    -moz-transform:    translateY(-500px);
+    -ms-transform:     translateY(-500px);
+    -o-transform:      translateY(-500px);
+    transform:         translateY(-500px);
+}
+
 
 
 #source span {
@@ -273,28 +372,6 @@ a:focus {
     -o-transition:      0.5s;
     transition:         0.5s;
 }
-
-/*#source.present .positioning {
-    -webkit-transform: translateY(-10px);
-    -moz-transform:    translateY(-10px);
-    -ms-transform:     translateY(-10px);
-    -o-transform:      translateY(-10px);
-    transform:         translateY(-10px);
-}
-
-#source.present .rotating {
-    -webkit-transform: rotate(-10deg);
-    -moz-transform:    rotate(-10deg);
-    -ms-transform:     rotate(-10deg);
-    -o-transform:      rotate(-10deg);
-    transform:         rotate(-10deg);
-
-    -webkit-transition-delay: 0.25s;
-    -moz-transition-delay:    0.25s;
-    -ms-transition-delay:     0.25s;
-    -o-transition-delay:      0.25s;
-    transition-delay:         0.25s;
-}*/
 
 #source.present .scaling {
     margin-left: 70px;
