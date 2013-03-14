@@ -203,11 +203,11 @@ a:focus {
     -o-transform:      rotate(360deg);
     transform:         rotate(360deg);
 
-    -webkit-transition: 5s;
-    -moz-transition:    5s;
-    -ms-transition:     5s;
-    -o-transition:      5s;
-    transition:         5s;
+    -webkit-transition: 6s;
+    -moz-transition:    6s;
+    -ms-transition:     6s;
+    -o-transition:      6s;
+    transition:         6s;
 }
 
 
