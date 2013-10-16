@@ -250,7 +250,12 @@ a:focus {
 
 #sponsors table {
     position: relative;
-    right: 300px;
+    right: 190px;
+}
+
+#sponsors table td {
+    padding: 20px;
+	vertical-align: middle;
 }
 
 
